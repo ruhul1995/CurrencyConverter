@@ -21,7 +21,6 @@ class CurrencyListViewModel(var myRepository: MyRepository): ViewModel() {
     val exchangeRateLiveData: LiveData<ExchangeRatesModel>
     get() = exchangeRatesList
 
-
     fun apiCall()
     {
         viewModelScope.launch(Dispatchers.IO) {
